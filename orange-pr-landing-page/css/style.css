@@ -7,13 +7,28 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    /* background-color: #f28e6b; */
     color: #ffffff;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
-    width: 100vw;
+    text-rendering: optimizeLegibility;
+}
+
+html,
+body {
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+
 }
 
 .container {
@@ -117,11 +132,10 @@ button {
     background: linear-gradient(90deg, rgba(246, 114, 69, 0.15) 0%, rgba(255, 255, 255, 0) 100%),
         url('../assets/hero-bg.png') no-repeat center;
     background-size: cover;
-    background-position: left 0% center;
+    background-position: right 10% center;
+    /* background-repeat: no-repeat; */
     padding-top: 20px;
-
 }
-
 
 .hero-container {
     display: grid;
@@ -262,6 +276,14 @@ button {
     width: calc(100% + 120px);
 }
 
+
+@media (max-width: 768px) {
+    .header-footer-divider {
+        margin: 40px 0;
+        width: 100%;
+    }
+}
+
 .footer-bottom-row {
     display: flex;
     align-items: center;
@@ -323,7 +345,6 @@ button {
 @media (max-width: 1024px) {
     .hero-title {
         font-size: 64px;
-        margin-top: 40px
     }
 
     .container {
@@ -332,39 +353,79 @@ button {
 }
 
 @media (max-width: 768px) {
+    .main-header {
+        padding: 24px 0;
+    }
+
+    .nav-container {
+        position: relative;
+    }
+
     .menu-toggle {
         display: flex;
+        z-index: 20;
     }
 
     .nav-links {
+        position: absolute;
+        top: calc(100% + 16px);
+        right: 0;
         display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.9);
+        border-radius: 12px;
+        min-width: 220px;
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .nav-links.is-open {
+        display: flex;
     }
 
     .hero-container {
         grid-template-columns: 1fr;
         gap: 50px;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 50px;
     }
 
     .hero-content {
         align-items: center;
+        margin-right: 0;
+    }
+
+    .hero-title {
+        font-size: clamp(2.5rem, 8vw, 3.8rem);
     }
 
     .hero-description {
         max-width: 100%;
+        margin-bottom: 30px;
     }
 
     .hero-video-wrapper {
         justify-content: center;
     }
 
-    .controls-aligner {
+    .video-card {
+        margin: 0;
+        max-width: 280px;
+    }
+
+    .footer-bottom-row {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .controls-wrapper {
+        width: 100%;
         justify-content: center;
     }
 }
-
-
 
 
 
@@ -979,12 +1040,6 @@ button {
         padding-bottom: 90px;
     }
 }
-
-
-
-
-
-
 
 
 
@@ -1636,7 +1691,6 @@ button {
 @media (max-width: 991px) {
     .main-footer {
         padding: 60px 24px 30px 24px;
-        margin-top: 120px;
     }
 
     .newsletter-container {
@@ -1663,5 +1717,79 @@ button {
 
     .social-icons {
         justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-container img,
+    .hero-container .video-card-wrapper {
+        margin: 0 auto;
+        max-width: 90%;
+    }
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .counters-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .why-choose-card {
+        max-width: 550px;
+        margin: 0 auto 20px auto;
+    }
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+
+    .newsletter-section,
+    [class*="newsletter"] {
+        margin-top: 0 !important;
+        transform: none !important;
+        position: relative !important;
+        top: 0 !important;
+        padding-top: 60px !important;
+    }
+
+    .testimonials-block-section,
+    [class*="testimonial"] {
+        position: relative !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 60px !important;
     }
 }
