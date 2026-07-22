@@ -1793,3 +1793,101 @@ button {
         padding-bottom: 60px !important;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   MOBILE & TABLET RESPONSIVE STYLES
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+    
+    /* 1. Prevent Horizontal Page Scroll */
+    body, html {
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    /* 2. Header & Navigation Fixes */
+    header, .navbar, nav {
+        padding: 15px 20px !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Desktop Links ni Mobile screen lo Hide cheyandi */
+    .nav-links, 
+    nav ul, 
+    .menu-items {
+        display: none !important; /* Mobile hamburger icon lekapothe, text overlay avvakunda hide avthundhi */
+    }
+
+    /* Hamburger Menu Button Visible (Unde: toggle feature ki) */
+    .hamburger, 
+    .menu-toggle {
+        display: block !important;
+    }
+
+    /* 3. Hero Section Padding & Layout Adjustments */
+    .hero, 
+    .hero-section {
+        padding: 80px 20px 40px 20px !important;
+        min-height: auto !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Big Typography Scale-down */
+    h1, .hero-title, .hero h1 {
+        font-size: 2.5rem !important; /* Huge desktop font sizes fit mobile */
+        line-height: 1.1 !important;
+        letter-spacing: -0.5px;
+    }
+
+    .hero-description, 
+    .hero p {
+        font-size: 0.95rem !important;
+        max-width: 100% !important;
+        margin-top: 15px;
+    }
+
+    /* 4. Floating Video Card / Bottom Right Box Fix */
+    .video-card, 
+    .floating-card, 
+    .hero-video-wrapper {
+        position: relative !important; /* Absolute positioning nunchi normal document flow ki marchandi */
+        right: auto !important;
+        bottom: auto !important;
+        margin-top: 30px !important;
+        width: 100% !important;
+        max-width: 280px;
+    }
+
+    /* 5. Generic Grid & Flex Container Fallbacks */
+    .container, 
+    .grid, 
+    .row {
+        width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        flex-direction: column !important;
+    }
+}
