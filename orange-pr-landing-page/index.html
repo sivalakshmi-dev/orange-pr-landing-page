@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Orange PR agency landing page showcasing services, expertise, and contact options.">
     <title>Orange PR - Fresh Juicy Bright</title>
-    <!-- CSS Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,7 +21,6 @@
         <div class="container nav-container">
             <div class="logo">ORANGE PR</div>
 
-            <!-- Mobile Menu Toggle Button (Accessibility friendly) -->
             <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
@@ -28,7 +32,6 @@
                 <a href="#" class="nav-item">PR SERVICES</a>
                 <a href="#" class="nav-item">ABOUT US</a>
                 <a href="#" class="nav-item">CONTACT</a>
-                <!-- Grid icon box on the right -->
                 <a href="#" class="grid-icon-box" aria-label="Dashboard Menu">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <rect x="3" y="3" width="7" height="7"></rect>
@@ -43,11 +46,9 @@
 
     <!-- Hero Section -->
     <main>
-        <section class="hero-section">
-            <!-- Background Image overlay handled via CSS using assets/hero-bg.png -->
+        <section class="hero-section" id="home">
             <div class="container hero-container">
 
-                <!-- Left Side Content -->
                 <div class="hero-content">
                     <h1 class="hero-title">
                         <span class="text-light">FRESH</span><br>
@@ -62,12 +63,10 @@
                     </p>
                 </div>
 
-                <!-- Right Side Video Preview Thumbnail -->
                 <div class="hero-video-wrapper">
                     <div class="video-card">
                         <img src="assets/hero-video.png" alt="Team meeting and interview video preview"
-                            class="video-thumbnail">
-                        <!-- Custom Floating Play Button Overlay -->
+                            class="video-thumbnail" loading="eager" decoding="async">
                         <button class="play-btn" aria-label="Play video">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                 <polygon points="5 3 19 12 5 21 5 3"></polygon>
@@ -80,8 +79,6 @@
 
             </div>
 
-            <!-- Bottom Control Footer Inside Hero (Line, dots, and arrows) -->
-            <!-- Bottom Control Footer Inside Hero -->
             <div class="hero-footer-wrapper">
                 <div class="container">
                     <div class=" header-footer-divider"></div>
@@ -111,24 +108,19 @@
 
 
 
-
-
-
     <!-- About & Stats Sections -->
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="container">
             <h2 class="about-title">Think. Create.<br>Promote.</h2>
 
             <div class="about-grid">
-                <!-- Left: image only -->
                 <div class="about-left">
                     <div class="profile-frame">
                         <img src="assets/about-profile.png" alt="Creative professional recording a video"
-                            class="profile-img">
+                            class="profile-img" loading="lazy" decoding="async">
                     </div>
                 </div>
 
-                <!-- Right: paragraph + button -->
                 <div class="about-right">
                     <div class="watermark-bg">ORANGE</div>
                     <p class="about-desc">
@@ -147,11 +139,10 @@
         </div>
     </section>
 
-    <!-- Stats Counter Bar Segment -->
-    <!-- Stats Section -->
+
+
     <section class="stats-section">
         <div class="container stats-bar">
-            <!-- Client stats -->
             <div class="stat-item">
                 <div class="stat-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -167,8 +158,7 @@
                 </div>
             </div>
 
-            <!-- Events stats -->
-            <div class="stat-item">
+\            <div class="stat-item">
                 <div class="stat-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
@@ -183,7 +173,6 @@
                 </div>
             </div>
 
-            <!-- Years of Experience stats -->
             <div class="stat-item">
                 <div class="stat-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -197,7 +186,6 @@
                 </div>
             </div>
 
-            <!-- Materials stats -->
             <div class="stat-item">
                 <div class="stat-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -213,11 +201,9 @@
     </section>
 
 
-    <!-- What We Do / Experts Section -->
-    <section class="experts-showcase-section">
+    <section class="experts-showcase-section" id="services">
         <div class="experts-wrapper-container">
 
-            <!-- Left Content Block -->
             <div class="experts-content-block">
                 <div class="experts-header-group">
                     <h2 class="experts-main-title">WHAT WE DO<br>EXPERTS</h2>
@@ -243,13 +229,12 @@
                 </div>
             </div>
 
-            <!-- Right Staggered Grid Mosaic Area -->
             <div class="experts-cards-mosaic">
 
-                <!-- Card 01: Media Relations (Tall primary layout) -->
                 <div class="expert-card-tile card-tall-primary">
                     <div class="tile-image-frame">
-                        <img src="assets/service-media.png" alt="Media Relations" class="tile-asset-source">
+                        <img src="assets/service-media.png" alt="Media Relations" class="tile-asset-source"
+                            loading="lazy" decoding="async">
                     </div>
                     <div class="tile-glass-backdrop-overlay">
                         <div class="tile-content-inner">
@@ -270,10 +255,10 @@
                     </div>
                 </div>
 
-                <!-- Card 02: Influencer Management (Medium Height Staggered Layout) -->
                 <div class="expert-card-tile card-medium-secondary">
                     <div class="tile-image-frame">
-                        <img src="assets/service-influencer.png" alt="Influencer Management" class="tile-asset-source">
+                        <img src="assets/service-influencer.png" alt="Influencer Management" class="tile-asset-source"
+                            loading="lazy" decoding="async">
                     </div>
                     <div class="tile-glass-backdrop-overlay compact-layout-banner">
                         <div class="tile-content-inner">
@@ -283,10 +268,10 @@
                     </div>
                 </div>
 
-                <!-- Card 03: Events Management (Short Floating Layout) -->
                 <div class="expert-card-tile card-short-tertiary">
                     <div class="tile-image-frame">
-                        <img src="assets/service-events.png" alt="Events" class="tile-asset-source">
+                        <img src="assets/service-events.png" alt="Events" class="tile-asset-source" loading="lazy"
+                            decoding="async">
                     </div>
                     <div class="tile-glass-backdrop-overlay compact-layout-banner">
                         <div class="tile-content-inner">
@@ -306,12 +291,10 @@
 
 
     <section class="why-choose-section">
-        <!-- Top Background Header Panel -->
         <div class="why-choose-header-bg">
             <h2>WHY CHOOSE CONCEPT PR?</h2>
         </div>
 
-        <!-- Overlapping Offset Cards Container Grid -->
         <div class="why-choose-cards-grid">
 
             <!-- Card 01 -->
@@ -370,16 +353,8 @@
 
 
 
-
-
-
-
-
-
-
     <section class="testimonials-block-section">
 
-        <!-- Dynamic Grid Matrix Section -->
         <div class="testimonials-wave-grid">
 
             <!-- Column 1 -->
@@ -469,12 +444,10 @@
 
         </div>
 
-        <!-- Centered & Lifted Text Overlay -->
         <div class="testimonials-header-overlay-panel">
             <h2>TESTIMONIALS</h2>
         </div>
 
-        <!-- Review Panel -->
         <div class="testimonial-review-focus-box">
             <div class="review-avatar-frame">
                 <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80"
@@ -507,26 +480,14 @@
 
 
 
-
-
-
-
-
-
-
-
-
-    <section class="contact-section">
-        <!-- 1. వెనుక ఉండే టూ-టోన్ బ్యాక్‌గ్రౌండ్ గ్రిడ్ -->
+    <section class="contact-section" id="contact">
         <div class="contact-bg-grid">
             <div class="bg-left-image">
-                <!-- ఇక్కడ నీ ఇమేజ్ పాత్ ఇవ్వు -->
-                <img src="assets/woman-mic.png" alt="Get in touch" />
+                <img src="assets/woman-mic.png" alt="Get in touch" loading="lazy" decoding="async" />
             </div>
             <div class="bg-right-gray"></div>
         </div>
 
-        <!-- 2. పైన ఫ్లోట్ అయ్యే వైట్ ఫామ్ కార్డ్ Container -->
         <div class="contact-card-container">
             <div class="contact-form-card">
                 <h2>GET IN TOUCH</h2>
@@ -559,28 +520,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- ==========================================================================
      NEWSLETTER & FOOTER SECTION (FIGMA MATCHED)
      ========================================================================== -->
     <footer class="main-footer">
-        <!-- 1. Newsletter Row -->
         <div class="newsletter-container">
             <div class="newsletter-content">
                 <h3>Newsletter</h3>
@@ -591,7 +534,6 @@
                 <form class="newsletter-form" onsubmit="event.preventDefault();">
                     <input type="email" placeholder="Enter your email address" required aria-label="Email Address">
                     <button type="submit" class="newsletter-btn" aria-label="Subscribe">
-                        <!-- Right Arrow Icon -->
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -604,9 +546,7 @@
 
         <hr class="footer-divider">
 
-        <!-- 2. Main Footer Content (Grid) -->
         <div class="footer-grid">
-            <!-- Brand Column -->
             <div class="footer-col brand-info">
                 <h2 class="footer-logo">ORANGE PR</h2>
                 <p>Orange PR is Dubai’s leading communication company, specializing in cultural, lifestyle, fashion and
@@ -617,7 +557,6 @@
                     success.</p>
             </div>
 
-            <!-- Quick Links Column -->
             <div class="footer-col footer-links">
                 <h4>QUICK LINKS</h4>
                 <ul>
@@ -628,13 +567,11 @@
                 </ul>
             </div>
 
-            <!-- Contact Info Column -->
             <div class="footer-col footer-contact">
                 <h4>CONTACT INFO</h4>
                 <ul>
                     <li>
                         <span class="contact-icon">
-                            <!-- Pin Icon -->
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -646,7 +583,6 @@
                     </li>
                     <li>
                         <span class="contact-icon">
-                            <!-- Phone Icon -->
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
@@ -657,7 +593,6 @@
                     </li>
                     <li>
                         <span class="contact-icon">
-                            <!-- Mail Icon -->
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
@@ -673,7 +608,6 @@
 
         <hr class="footer-divider">
 
-        <!-- 3. Bottom Bar (Copyright & Socials) -->
         <div class="footer-bottom">
             <p class="copyright">&copy; 2025 Orange PR Agency. | Design & Development by : MightyWarners Technologies
             </p>
